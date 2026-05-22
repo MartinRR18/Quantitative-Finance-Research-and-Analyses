@@ -1,3 +1,35 @@
+# Gain-Loss Asymmetry and Bimodal Structures in Multiscale Financial Returns
+
+📄 **Current Status:** Author's Original Manuscript. Currently under peer review at the journal *Quantitative Finance* (Taylor & Francis).
+
+---
+
+## 📌 Executive Summary
+[Aquí pegas el Abstract en inglés que tienes en tu paper. Es excelente porque menciona explícitamente el uso de la distancia de Wasserstein, la bimodalidad emergente vs. el ruido diario y los límites del movimiento browniano geométrico.]
+
+---
+
+## 🛠️ Repository Architecture & Reproducibility
+
+This repository contains the complete, production-grade source code and environments required to replicate every empirical finding, statistical test, and figure presented in the paper.
+
+* 📂 **`libs/`**: Core modules and implementations of the multi-scale trend identification algorithms, calculation of volatility ratios, and non-parametric estimation metrics.
+* 📂 **`notebooks/`**: End-to-end research pipelines containing:
+  * Financial data retrieval and data cleaning (DJIA, Nasdaq, Nikkei, IPC).
+  * **Monte Carlo Null Model:** Full Geometric Brownian Motion (GBM) simulation framework used as a structural control group.
+  * **Statistical Core:** Implementations of Hartigan's Dip Test, Welch's t-test, Mann-Whitney U-test, and 10,000-iteration Permutation tests for the $W_1$ Wasserstein Distance.
+  * **Uncertainty Quantification:** Non-parametric bootstrapping pipelines ($N=10,000$) for statistical error estimation.
+* 📄 **`Articulo_GainLossTAssimetry_BimodalTrendsDist.pdf`**: Full text manuscript draft.
+
+---
+
+## 🚀 Key Theoretical & Practical Insights for Industry
+1. **Risk Management Beyond Gaussian Models:** Standard parametric risk metrics (like standard VaR) systematically underestimate tail risk by ignoring the *Asymmetry of Character* quantified here.
+2. **observable Regime Priors:** Rather than blindly inferring latent states via classical Hidden Markov Models, our multi-scale filtering provides directly observable bimodal distributions to calibrate asymmetrical emission states (e.g., Skewed Student-t).
+3. **Algorithmic Trading Thresholds:** The structural boundary between unimodal noise ($d=1$) and bimodal trends ($d \ge 2$) provides an empirical, data-driven framework to optimize trend-following filters and minimize whipsaw losses.
+
+
+
 # Quantitative Finance & Time Series Analysis
 
 This repository houses a collection of Python modules and Jupyter notebooks dedicated to quantitative finance, time series analysis, and market dynamics. It includes tools for financial data manipulation, statistical analysis of returns and trends, market breadth indicators, Principal Component Analysis, and advanced time series modeling.
