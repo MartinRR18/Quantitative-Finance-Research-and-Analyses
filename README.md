@@ -5,7 +5,22 @@
 ---
 
 ## 📌 Executive Summary
-[Aquí pegas el Abstract en inglés que tienes en tu paper. Es excelente porque menciona explícitamente el uso de la distancia de Wasserstein, la bimodalidad emergente vs. el ruido diario y los límites del movimiento browniano geométrico.]
+This study presents a multi-scale statistical analysis of financial market dynamics by examining "Trend Returns"
+(TReturns)—logarithmic returns derived from uninterrupted directional price movements—across four major
+global indices (DJIA, Nasdaq, Nikkei, and IPC). By contrasting empirical data against a Monte Carlo Geomet-
+ric Brownian Motion (GBM) null model, we rigorously distinguish between mechanical artifacts and genuine
+structural anomalies. We document Emergent Bimodality: while daily returns (d = 1) exhibit unimodal noise,
+trends persisting for d ≥ 2 structurally separate into distinct positive and negative modes. While the GBM
+confirms that this separation is largely a natural topology of trend persistence, empirical data reveal a distinct
+divergence at longer durations (d > 6), where the negative mode extinguishes, transitioning back to a positively
+shifted unimodality—a behavior absent in the persistent bimodality of the random walk. Furthermore, we
+uncovered a fundamental Dual Asymmetry. While the Asymmetry of Frequency (preference for long uptrends)
+is partially consistent with positive drift, the Asymmetry of Character—quantified via Volatility Ratios (< 1)
+and the Wasserstein Distance—reveals that downtrends are structurally more volatile ("violent") and possess
+heavier tails than uptrends, a feature that the Gaussian control fundamentally fails to reproduce. At the macro
+level, this manifests as a universal negative skewness. These findings suggest that standard Gaussian models
+are structurally blind to the specific mechanics of market corrections, leading to systematic underestimation of
+tail risk
 
 ---
 
